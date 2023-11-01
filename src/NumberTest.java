@@ -50,7 +50,7 @@ class NumberTest {
     @org.junit.jupiter.api.Test
     void getHexadecimalNegative() {
         number = new Number(-68);
-        assertEquals("BC", number.getHexadecimal());
+        assertEquals("AC", number.getHexadecimal());
     }
 
     @org.junit.jupiter.api.Test
@@ -62,13 +62,13 @@ class NumberTest {
     @org.junit.jupiter.api.Test
     void testToStringPositiveTwo() {
         number = new Number(148);
-        assertEquals("Number{denary=148 binary=010010100 hexadecimal=94}", number.toString());
+        assertEquals("Number{denary=148 binary=10010100 hexadecimal=94}", number.toString());
     }
 
     @org.junit.jupiter.api.Test
     void testToStringNegative() {
         number = new Number(-68);
-        assertEquals("Number{denary=-68 binary=10111100 hexadecimal=BC}", number.toString());
+        assertEquals("Number{denary=-68 binary=10111100 hexadecimal=AC}", number.toString());
     }
 
     @org.junit.jupiter.api.Test
@@ -81,7 +81,7 @@ class NumberTest {
     void testNegatePositive() {
         number = new Number(68);
         number.negate();
-        assertEquals("Number{denary=-68 binary=10111100 hexadecimal=BC}", number.toString());
+        assertEquals("Number{denary=-68 binary=10111100 hexadecimal=AC}", number.toString());
     }
 
     @org.junit.jupiter.api.Test
